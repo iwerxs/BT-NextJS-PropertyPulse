@@ -27,8 +27,15 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/layout.jsx", "app/page.jsx"  ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "paths": {
+    "@app/*": ["./app/*"],
+    "@assets": ["./assets/*"],
+    "@components/*": ["./components/*"],
+    "@styles/*": ["./styles/*"],
+    "@utils/*": ["./utils/*"]
+  }
 }
