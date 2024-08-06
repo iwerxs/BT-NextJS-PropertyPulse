@@ -1,8 +1,13 @@
 import PropertyCard from "@/components/PropertyCard";
-import properties from "@/properties.json";
+// import properties from "@/properties.json";
+import connectDB from "@/config/database";
+import Property from "@/models/Property";
 
-const PropertiesPage = () => {
-  console.log(properties);
+const PropertiesPage = async () => {
+  // console.log(properties);
+  // .lean returns plain js objects
+  await connectDB();
+  const properties = await Property.find({}).lean();
 
   return (
     <>
