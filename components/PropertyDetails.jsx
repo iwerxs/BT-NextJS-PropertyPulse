@@ -76,7 +76,7 @@ const PropertyDetails = ({ property }) => {
               <span className='hidden sm:inline'>Baths</span>
             </p>
             <p>
-              <i className='fa-solid fa-ruler-combined'></i>
+              <FaRulerCombined className="inline-block mr-2" />
               {property.square_feet}{" "}
               <span className='hidden sm:inline'>sqft</span>
             </p>
@@ -89,7 +89,7 @@ const PropertyDetails = ({ property }) => {
 
           <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none'>
             {property.amenities.map((amenity, index) => (
-              <li key={index}>{amenity}</li>
+              <li key={index}><FaCheck className="inline-block text-green-600 mr-2" />{amenity}</li>
             ))}
           </ul>
         </div>
