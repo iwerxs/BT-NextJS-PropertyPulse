@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import AuthProvider from "@/components/AuthProvider";
+import AuthProvider from "@/components/AuthProvider"; //this is the session component
 import "@/assets/styles/globals.css";
 
 export const metadata = {
